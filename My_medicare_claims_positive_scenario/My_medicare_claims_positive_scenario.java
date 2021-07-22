@@ -97,7 +97,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			click("claims_claim_type");
 			text = td_reader("claims_type");
 			drop_down(OR_reader("claims_claim_type_dropdown"),text);
-			System.out.println("3");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_003");
@@ -109,7 +108,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			click_javascript("claims_claims_tab");
 			click_javascript("claims_claim_summary_tab");
-			System.out.println("3.1");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("view_claims_summary");
@@ -123,7 +121,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			click("claims_time_period");
 			text = td_reader("claims_time_period");
 			drop_down(OR_reader("claims_time_period_dropdown"),text);
-			System.out.println("4");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_004");
@@ -135,7 +132,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			click_javascript("claims_claims_tab");
 			click_javascript("claims_claim_summary_tab");
-			System.out.println("4.1");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("view_claims_summary1");
@@ -150,7 +146,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			Assert.assertEquals(true,value);
 			value = driver.findElement(By.xpath(OR_reader("claims_insurer_portion_text"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			System.out.println("5");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_005");
@@ -163,7 +158,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			value = driver.findElement(By.xpath(OR_reader("claims_help_breakdown_text"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			System.out.println("6");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_006");
@@ -176,28 +170,20 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			str= driver.findElement(By.xpath(OR_reader("claims_institutional"))).getText();
 			Assert.assertEquals(str,td_reader("claims_institutional"));
-			System.out.println("7.1");
 			str= driver.findElement(By.xpath(OR_reader("claims_pharmacy"))).getText();
 			Assert.assertEquals(str,td_reader("claims_pharmacy"));
-			System.out.println("7.2");
 			str= driver.findElement(By.xpath(OR_reader("claims_professional"))).getText();
 			Assert.assertEquals(str,td_reader("claims_professional"));
-			System.out.println("7.3");
 			str= driver.findElement(By.xpath(OR_reader("claims_HHA"))).getText();
 			Assert.assertEquals(str,td_reader("claims_HHA"));
-			System.out.println("7.4");
 			str= driver.findElement(By.xpath(OR_reader("claims_DME"))).getText();
 			Assert.assertEquals(str,td_reader("claims_DME"));
-			System.out.println("7.5");
 			str= driver.findElement(By.xpath(OR_reader("claims_vision"))).getText();
 			Assert.assertEquals(str,td_reader("claims_vision"));
-			System.out.println("7.6");
 			str= driver.findElement(By.xpath(OR_reader("claims_dental"))).getText();
 			Assert.assertEquals(str,td_reader("claims_dental"));
-			System.out.println("7.7");
 			str= driver.findElement(By.xpath(OR_reader("claims_total"))).getText();
 			Assert.assertEquals(str,td_reader("claims_total"));
-			System.out.println("7.8");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_007");
@@ -212,7 +198,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			click("claims_funnel_icon");
 			text = td_reader("claims_funnel_dropdown_option");
 			drop_down(OR_reader("claims_funnel_dropdown"),text);
-			System.out.println("8");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_008");
@@ -224,7 +209,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			value = driver.findElement(By.xpath(OR_reader("claims_oldest_newest_box"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			System.out.println("8then");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("oldest_newest_claim");
@@ -237,7 +221,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			value = driver.findElement(By.xpath(OR_reader("claims_record_found_text"))).isDisplayed();
 			Assert.assertEquals(true,value);
-			System.out.println("9");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_009");
@@ -250,7 +233,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 		try {
 			click("claims_prescription_drug_claim");
 			element_visible_wait(360,"claims_claim_number");
-			System.out.println("10");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_010");
@@ -284,7 +266,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			Assert.assertEquals(true,value);
 			str= driver.findElement(By.xpath(OR_reader("claims_claim_service_date_value"))).getText();
 			Assert.assertEquals(str,td_reader("claims_claim_service_date_value"));
-			System.out.println("10then");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("Selected claim details displayed");
@@ -296,7 +277,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 	public void My_medicare_claims_positive_positive_tc_011() throws Exception {
 		try {
 			click("claims_services_down_arrow");
-			System.out.println("11");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_011");
@@ -322,7 +302,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			Assert.assertEquals(true,value);
 			str= driver.findElement(By.xpath(OR_reader("claims_service_patient_portion_value"))).getText();
 			Assert.assertEquals(str,td_reader("claims_service_patient_portion_value"));
-			System.out.println("11then");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("services_details");
@@ -347,7 +326,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			value = driver.findElement(By.xpath(OR_reader("claims_back_arrow"))).isDisplayed();
 			Assert.assertEquals(true,value);
 			click("claims_back_arrow");
-			System.out.println("12");
 		} catch (Exception e) {
 			e.printStackTrace();
 			takeScreenShot("My_medicare_claims_positive_positive_tc_012");
@@ -369,7 +347,6 @@ public class My_medicare_claims_positive_scenario extends Generic_function {
 			Assert.assertEquals(true,value);
 			click("claims_back_arrow");
 			click("claims_related_record_more");
-			System.out.println("13");
 			browser_close();
 		} catch (Exception e) {
 			e.printStackTrace();
